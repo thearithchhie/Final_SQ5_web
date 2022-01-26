@@ -1,0 +1,278 @@
+/* ### */
+
+
+/* 검색 */
+
+
+/* ### */
+
+.page_search {
+    padding: 62px 0 50px;
+    padding-bottom: calc(50px + env(safe-area-inset-bottom));
+}
+
+.page_search .no_data .txt {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    margin-top: -10px;
+    font-size: 16px;
+    color: #b5b5b5;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    text-align: center
+}
+
+.off #goodsList .list_goods .no_data .txt,
+.page_search.off .no_data .txt {
+    display: block;
+    position: static;
+    padding: 70px 0 100px
+}
+
+
+/* 검색어입력 */
+
+.search {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    padding: 10px 16px;
+    background-color: #fff
+}
+
+.search .search_field {
+    position: relative;
+    flex-grow: 1
+}
+
+.search .inp:focus,
+.search .inp {
+    height: 42px;
+    padding: 0 80px 1px 15px;
+    border-radius: 5px;
+    border: 1px solid #f4f4f3;
+    background-color: #f4f4f4;
+    caret-color: #5f0080
+}
+
+.search .inp.on {
+    font-weight: 600
+}
+
+.search .del {
+    display: block;
+    position: absolute;
+    right: 42px;
+    bottom: 0;
+    width: 34px;
+    height: 42px;
+    border: none;
+    background: url(https://res.kurly.com/mobile/ico/2009/ico_search_del.svg) no-repeat 50% 50%;
+}
+
+.search .submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: url(https://res.kurly.com/kurly/ico/2021/search_20_20_999_v2.svg) no-repeat 50% 50%;
+    background-size: 20px 20px
+}
+
+.search .cancel {
+    width: 56px;
+    height: 42px;
+    margin-right: -12px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    line-height: 42px;
+}
+
+
+/* 상품 바로가기 */
+
+.suggest .inner_suggest {
+    padding: 12px 20px 0
+}
+
+.suggest .tit {
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+
+.suggest .list {
+    overflow-y: auto;
+    height: 100%;
+}
+
+.suggest .no_data,
+.suggest li a {
+    display: block;
+    overflow: hidden;
+    padding: 14px 0 13px;
+    border-bottom: 1px solid #f4f4f4;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.suggest .no_data {
+    color: #b5b5b5
+}
+
+
+/* 메뉴-인기검색어_최근검색어 */
+
+.keyword {
+    display: flex;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 15px 0 16px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff
+}
+
+.keyword li {
+    flex-grow: 1;
+}
+
+.keyword a {
+    display: block;
+    position: relative;
+    height: 47px;
+    padding-top: 14px;
+    font-size: 16px;
+    color: #666;
+    line-height: 20px;
+    text-align: center
+}
+
+.keyword .on a {
+    font-weight: 600;
+    color: #5f0080
+}
+
+.keyword .on a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 3px;
+    background-color: #5f0080
+}
+
+
+/* 인기검색어 */
+
+.popularity {
+    padding-top: 48px
+}
+
+.popularity:after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin: -1px 19.5px 0;
+    background-color: #f4f4f4;
+}
+
+.popularity .list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 19.5px
+}
+
+.popularity li {
+    width: 50%;
+    border-bottom: 1px solid #f4f4f4
+}
+
+.popularity a {
+    display: block;
+    overflow: hidden;
+    padding: 14px 5px 13px 0;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.popularity li:nth-child(2n) a {
+    padding-left: 10px;
+}
+
+
+/* 최근검색어 */
+
+.recently {
+    padding-top: 48px
+}
+
+.recently .list {
+    padding: 0 19.5px
+}
+
+.recently li {
+    position: relative;
+    border-bottom: 1px solid #f4f4f4
+}
+
+.recently a {
+    display: block;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 14px 30px 13px 0;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.recently button {
+    position: absolute;
+    right: -17.5px;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: url(https://res.kurly.com/kurly/ico/2021/off_48_48_d9d9d9.svg) no-repeat 50% 50%;
+}
+
+
+/* 상품목록-없는경우 */
+
+#goodsList.off {
+    display: none
+}
+
+#goodsList .list_goods .no_data {
+    padding: 0
+}
+
+#goodsList .list_goods .no_data .txt {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    margin-top: -10px;
+    font-size: 16px;
+    color: #b5b5b5;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    text-align: center
+}

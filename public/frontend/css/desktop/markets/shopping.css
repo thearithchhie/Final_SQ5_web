@@ -1,0 +1,283 @@
+#gnb .gnb_main .gnb a:hover,
+#gnb .gnb_main .gnb a.on {
+    text-decoration: none;
+}
+
+.mt-16 {
+    margin-top: 0;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 70%;
+        margin: auto;
+        /* margin-left: 26em; */
+    }
+}
+
+#myTab li a.menu-link:hover {
+    color: #5f0080;
+}
+
+.tabs__link {
+    display: block;
+    cursor: pointer;
+}
+
+.tabs__link a {
+    /* display: block; */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__content.show {
+    display: block;
+}
+
+.nav-pills .nav-link .active,
+.nav-pills .show>.nav-link,
+#myTab li a.active {
+    color: #5f0080;
+}
+
+#myTab li a.active {
+    border-bottom-color: #5f0080;
+}
+
+.input_radio input:checked~.checkmark,
+.bg-green {
+    background-color: #5f0080;
+}
+
+.text-green {
+    color: #5f0080;
+}
+
+.list_goods .dc {
+    padding-right: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fa622f;
+    line-height: 20px;
+}
+
+.list_goods .name {
+    display: block;
+    overflow: hidden;
+    max-height: 50px;
+    margin-top: 12px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.list_goods .txt {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.list_goods .price {
+    display: block;
+    font-weight: 800;
+    font-size: 1.6em;
+    line-height: 40px;
+    font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
+}
+
+.group_btn_cart {
+    position: relative;
+    z-index: 9999;
+    right: 0.8em;
+    margin-top: 0em;
+}
+
+#owl-carousel-filter .group_btn_cart button {
+    top: -5em;
+}
+
+.group_btn_cart button {
+    top: -4.5em;
+}
+
+.list_goods .btn {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 0;
+    outline: none;
+}
+
+.list_goods .btn_cart {
+    background: url('https://res.kurly.com/pc/ico/2010/ico_cart.svg') no-repeat 50% 50%;
+    background-size: 35px 35px;
+}
+
+.list-item {
+    display: flex;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.list-item img {
+    width: 100%;
+    -webkit-transition: 1.2s ease;
+    transition: 1.2s ease;
+}
+
+.list-item img:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+/*Flex items*/
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item .name {
+    overflow: hidden;
+    max-height: 58px;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 29px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+
+.delivery_fee {
+    padding: 0.5em;
+    text-align: right;
+    font-size: 1.3em;
+}
+
+@media all and (min-width: 40em) {
+    .list-item {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 60em) {
+    .list-item {
+        width: 21.5%;
+        /* border: 1px solid darkgray; */
+        margin: 1.5em 1em;
+    }
+}
+
+.list-content {
+    background-color: #fff;
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list-content p {
+    flex: 1 0 auto;
+}
+
+.cursor-pointer img {
+    float: left;
+}
+
+a.shop {
+    text-decoration: none;
+    list-style: none;
+}
+
+.back-shopping {
+    background-color: rgb(131, 128, 128);
+    padding: 0.55em;
+    font-size: 0.9em;
+}
+
+.back-shopping,
+.shopping_cart {
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 30%);
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+}
+
+.main-title {
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #333;
+}
+
+.owl-next,
+.owl-prev {
+    top: 1em;
+}
+
+.owl-nav,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.list_goods ul li {
+    margin: auto;
+}
+
+.sub-title__products {
+    font-size: 1.3em;
+    padding-left: 0.5em;
+}
+
+#cards_landscape_wrap-2 .map-search {
+    background: #fff;
+    transition: all 300ms;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 13%;
+    float: left;
+    margin: 3.2em 0;
+    margin-left: 2em;
+    box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+    cursor: pointer;
+}
+
+#goodsList .list_goods .inner_listgoods {
+    margin: auto
+}
+
+#goodsList .list_goods .info {
+    position: relative;
+}
+
+#goodsList .list_goods .info .delivery_fee {
+    position: absolute;
+    right: 0;
+    top: 4.5em;
+}
+
+.main_max_width .item .dc,
+.main_max_width .item .price {
+    font-size: 1.5em;
+    font-family: “Playfair Display”, “Didot”, "Times New Roman", Times, serif;
+}
+
+.info_goods .price .dc {
+    margin-top: 1em;
+}
+
+#goodsList .list_goods .name {
+    width: 10em;
+}

@@ -1,0 +1,113 @@
+#menu-control {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: -3.5em;
+    padding: 0.3em 1.2em;
+    background-color: #fff;
+    overflow: hidden;
+    height: 3.9em;
+    z-index: 999;
+}
+
+#menu-control li {
+    float: left;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#menu-control li i.icon-home {
+    padding: 0px 0.2em;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+
+#menu-control li.active {
+    color: #5f0080;
+    border-bottom: 5px solid #5f0080;
+}
+
+#menu-control li a.on {
+    color: #5f0080;
+    font-weight: 700;
+}
+
+#menu-control li a {
+    display: block;
+    overflow: hidden;
+    margin-left: 0;
+    padding: 1.1em 0.5em;
+    font-size: 15px;
+    color: #666;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 7px;
+    border-bottom: 1px solid #9e9e9e52;
+    z-index: 99;
+}
+
+#header .cart_count {
+    right: 25px !important;
+}
+
+#header .location {
+    right: 70px !important;
+}
+
+.lang {
+    color: #fff;
+}
+
+.lang-container {
+    width: 2em;
+    position: absolute;
+    right: 6px;
+    padding: 4px;
+    top: 0.7em;
+}
+
+.language-mobile {
+    display: none;
+    position: absolute;
+    top: 4em;
+    width: 100%;
+    height: 40em;
+    background-color: #fff;
+}
+
+.menu-close {
+    position: absolute;
+    width: 1em;
+    top: -1.6em;
+    left: 0.5em;
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.lang-dropdown li {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 0;
+    text-align: left;
+    margin: 1em 1.2em;
+    line-height: 1.5;
+    border-bottom: 1px solid lightgray;
+}
+
+.lang-dropdown li img {
+    width: 22px;
+    height: 22px;
+    float: left;
+}
+
+.lang-dropdown li span {
+    margin-left: 12px;
+}

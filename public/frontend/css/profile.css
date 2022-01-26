@@ -1,0 +1,269 @@
+.modal-overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.404);
+    z-index: 9998;
+}
+
+.setting-modal {
+    display: none;
+    z-index: 9998;
+}
+
+.setting-modal-dialog {
+    position: absolute;
+    width: 60%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.modal-setting-header {
+    flex-direction: column;
+}
+
+#setting {
+    background-color: #59698D;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 1em;
+    width: 8em;
+}
+
+#setting:hover {
+    background-image: linear-gradient(to bottom, #c60fe1 0%, #9c0bb1 100%);
+}
+
+.profile-pic:hover .edit-profile {
+    display: block;
+}
+
+.edit-profile {
+    display: block;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+    background-color: #0000006b;
+    position: relative;
+    padding: 1em;
+    right: -35px;
+    top: -68px;
+    width: 12em;
+    font-size: .75rem;
+    cursor: pointer;
+    text-align: center;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+.profile-pic {
+    overflow: hidden;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dz-message,
+.dz-preview {
+    display: none;
+}
+
+.text-xs {
+    font-size: .75rem;
+}
+
+.main-order {
+    font-size: .8rem;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI emoji;
+}
+
+.body-bottom {
+    margin-bottom: 2.5em;
+}
+
+.header-left {
+    left: 8px;
+    top: 0;
+}
+
+.header-right {
+    right: 8px;
+    top: 0;
+}
+
+.header-left,
+.body-left,
+.header-right,
+.body-right {
+    font-size: .8rem;
+    position: absolute;
+}
+
+.body-left {
+    left: 18px;
+}
+
+.body-right {
+    right: 8px;
+}
+
+
+/* PROFILE IMAGE EFFECT  */
+
+.image-hover-text-container {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    transition: all 0.2s linear;
+}
+
+
+/* Make the image round */
+
+.image-hover-text-bubble {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    top: -6em;
+    left: 0;
+    right: 100%;
+    width: 100%;
+    height: 64%;
+    background: rgba(0, 0, 0, 0.439);
+    border: 1px solid #848484;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 30px 18px 0px 18px;
+    overflow: hidden;
+    font-size: 17px;
+    text-align: center;
+    word-wrap: break-word;
+    cursor: pointer;
+    color: #fff;
+}
+
+.image-hover-text-title {
+    position: absolute;
+    bottom: 0.5em;
+    right: 2em;
+}
+
+
+/* END PROFILE IMAGE EFFECT  */
+.profile-header-color {
+    color: #9c0bb1;
+}
+.profile-input input  {
+   border: none;
+}
+.profile-input input:focus  {
+   outline: none;
+}
+.profile-app-setting {
+    color: #0c0c0c;
+}
+.my-card a:hover {
+    text-decoration: none;
+}
+.profile-map-icon i{
+    font-size: 24px;
+    opacity: 0.5;
+}
+
+/*Design Faq*/
+.faq-h5-question {
+    font-size: 17px;
+}
+.faq-h5-answer {
+    font-size: 15px;
+}
+.faq-a-link {
+    color: #5f0080;
+}
+
+#currentTab li a.active {
+
+}
+
+#currentTab li a.nav-link:hover {
+    color: #5f0080;
+}
+
+/*Order tracking*/
+.track {
+    display: flex;
+    position: relative;
+    height: 7px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+.track .step {
+    flex-grow: 1;
+    width: 25%;
+    margin-top: -18px;
+    text-align: center;
+    position: relative;
+}
+.track .step.active:before {
+    background: gray;
+}
+
+.track .step::before {
+    height: 7px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 20px;
+}
+
+.track .step.active .icon {
+    background: #27d366;
+}
+
+.track .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border-radius: 100%;
+    background: #ddd
+}
+
+/* .track .icon > img {
+    margin-top: 3px;
+    color: #fff;
+} */
+.track .icon >i {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.track .step.active .text {
+    font-weight: 400;
+    color: #000;
+}
+
+.track .text {
+    display: block;
+    margin-top: 7px
+}
+.track .text p {
+    font-size: 13px;
+}
+/*End Order tracking*/
+

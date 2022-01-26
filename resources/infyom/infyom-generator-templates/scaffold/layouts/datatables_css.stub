@@ -1,0 +1,2 @@
+<!-- DataTable Bootstrap -->
+<link rel="stylesheet" href="{{asset('backend/plugins/datatables/dataTables.bootstrap4.css')}}">

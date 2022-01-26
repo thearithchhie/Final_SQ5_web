@@ -1,0 +1,176 @@
+/* SLIDE STYLE  */
+
+
+/* override */
+#header .logo img {display: none}
+
+/* ############## */
+/* 메인 공지 팝업 */
+/* ############## */
+#mainNotice .main_popup{overflow:hidden;position:fixed;z-index:10000;left:20px;right:20px;border-radius:4px;background-color:#fff}
+/*#mainNotice .main_popup.over{top:20px;bottom:20px}*/
+#mainNotice .main_popup{top:50%;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%)}
+#mainNotice .inner_mainpopup{position:relative;height:100%}
+#mainNotice .pop_view{overflow-y:auto;max-height:82vh;padding-bottom:56px}
+#mainNotice .pop_view img{vertical-align:top}
+#mainNotice .pop_footer{overflow:hidden;position:absolute;left:0;bottom:0;width:100%;height:56px;background-color:#fff}
+#mainNotice .pop_footer .btn{float:left;width:100%;height:100%;border:0 none;border-top:1px solid #f7f7f7;background-color:#fff;font-weight:600;font-size:16px;color:#333;}
+#mainNotice .pop_select .btn{width:50%}
+#mainNotice .pop_select .btn:last-child{border-left:1px solid #f7f7f7}
+#bgLoadingNotice{display:none;position:fixed;z-index:9999;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:0.5}
+@media screen and (max-width:320px) {
+    #mainNotice .pop_footer .btn{font-size:15px}
+}
+
+
+/* #### */
+/* 공통 */
+/* #### */
+#bgLoading{display:block}
+.page_main{min-height:100%;background-color:#fff;opacity:0}
+.page_main > div:nth-child(3) .tit_goods{padding-top:0}
+.page_main .bg{background-color:#f7f7f7}
+.page_main img{width:100%;vertical-align:top}
+.page_main .tit_goods{padding:16px 0 0 16px}
+.page_main .tit_goods.top_short{padding-top:0}
+.page_main .tit_goods .tit{font-weight:600;font-size:18px;line-height:22px;letter-spacing:0}
+.page_main .tit_goods .name{display:block;padding:16px 0}
+.page_main .top_short .name{padding-top:0}
+.page_main .tit_goods .ico{padding-right:17px;background:url(https://res.kurly.com/mobile/service/main/2011/ico_title_link.svg) no-repeat 100% 2px;background-size:17px 17px}
+.page_main .tit_goods .tit_desc{display:block;padding-top:4px;font-weight:400;font-size:14px;color:#999;line-height:17px;word-break:break-all}
+/* 상품목록마지막_전체보기버튼 */
+.page_main .list_goods{letter-spacing:0}
+.page_main .list_goods .thumb_goods{display:block;background-color:#eee;background-repeat:no-repeat;background-position:50% 50%;background-size:cover}
+.page_main .list_goods .thumb_goods .thumb{display:block;background-repeat:no-repeat;background-position:50% 50%;background-size:cover}
+.page_main .list_goods .thumb_goods .ico{z-index:1}
+.page_main .list_goods li.more{width:30.5%}
+.page_main .list_goods li.more a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+.page_main .list_goods .more .txt{display:block;overflow:hidden;position:absolute;left:0;top:50%;width:100%;font-size:14px;line-height:19px;text-align:center;transform:translate(0%, -50%)}
+.page_main .list_goods .more .thumb{display:block;width:45%;margin:0 auto 7px}
+
+/* ####### */
+/* 1종노출 */
+/* ####### */
+/* 1종노출+슬라이드+fullsize */
+.main_type1{margin-bottom:16px}
+.main_type1 .list_goods li{float:left}
+.main_type1 .list_goods .paging{position:absolute;z-index:1;right:15px;bottom:15px;width:38px;height:20px;padding-top:2px;text-align:center;letter-spacing:1px}
+.main_type1 .list_goods .paging.two{width:48px}
+.main_type1 .list_goods .bg{position:absolute;z-index:0;left:0;top:0;width:100%;height:20px;border:1px solid #001;border-radius:11px;background-color:#000;opacity:0.15}
+.main_type1 .list_goods .count{position:relative;z-index:1;top:1px;white-space:nowrap}
+.main_type1 .list_goods .paging *{font-weight:600;font-size:12px;color:#fff;line-height:16px}
+
+/* ####### */
+/* 2종노출 */
+/* ####### */
+/* 2종노출+슬라이드 */
+.main_type2 .list_goods{padding:0 16px}
+.main_type2 .list_goods li{float:left;width:43.5%}
+.main_type2 .list_goods .thumb_goods{width:100%}
+.main_type2 .list_goods .ico{position:absolute;left:0;top:0;width:26%}
+.main_type2 .list_goods .info_goods{height:108px}
+.main_type2 .list_goods .name{display:block;overflow:hidden;max-height:38px;margin-top:8px;padding-right:8px;
+    text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word
+}
+.main_type2 .list_goods .name .txt{font-size:14px;line-height:19px}
+.main_type2 .list_goods .price{display:block;overflow:hidden;padding-top:4px;font-weight:700;font-size:14px;line-height:18px;white-space:nowrap;text-overflow:ellipsis}
+.main_type2 .list_goods .dc{padding-right:5px;color:#fa622f;}
+.main_type2 .list_goods .cost{display:block;overflow:hidden;padding-top:1px;font-size:12px;color:#999;line-height:16px;white-space:nowrap;text-overflow:ellipsis;text-decoration:line-through}
+/* MD추천_카테고리메뉴 */
+.category_type{padding-bottom:40px}
+.category_type .tit_goods .name{padding-bottom:13px}
+.category_type .category_menu{overflow:hidden;width:100%;height:65px}
+.category_type .bg_category{position:relative;width:100%}
+.category_type .bg_category:before,
+.category_type .bg_category:after{content:"";position:absolute;left:15px;right:15px;top:0;height:1px;background-color:#f7f7f7}
+.category_type .bg_category:after{top:49px}
+.category_type .bg_shadow{position:absolute;z-index:1;top:1px;width:50px;height:42px;background:url(https://res.kurly.com/mobile/img/1812/bg_snb_100x2.png) repeat-y 0 0;background-size:50px 1px;pointer-events:none}
+.category_type .shadow_before{display:none;left:0;-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}
+.category_type .shadow_after{display:block;right:0}
+.category_type .category{overflow-y:hidden;overflow-x:auto;width:100%;height:75px;padding-top:2px}
+.category_type .list_category{position:relative;width:9999px}
+.category_type .list_category li{float:left}
+.category_type .list_category .bg{position:absolute;left:0;top:45px;width:0;height:2px;background-color:#5f0080}
+.category_type .list_category .menu{overflow:hidden;float:left;margin-left:16px;padding:15px 0;font-size:14px;color:#999;line-height:18px;white-space:nowrap}
+.category_type .list_category .on{font-weight:600;color:#5f0080}
+/* MD추천_상품목록 */
+.category_type .list_goods{overflow:hidden}
+.category_type .list_goods li{position:relative;width:31.4%;margin-right:8px}
+.category_type .list_goods li.cut{margin-right:0}
+.category_type .list_goods .ico{width:34%}
+.category_type .list_goods .info_goods{height:73px}
+.category_type .list_goods .name .txt{font-size:12px;line-height:16px}
+.category_type .list_goods .dc{padding-right:2px;font-size:12px}
+.category_type .list_goods .price{display:inline;font-size:12px;line-height:20px}
+.category_type .list_goods .cost{padding-top:0;font-size:10px;line-height:10px}
+/* MD추천_전체보기 */
+.category_type .link_cate{padding:6px 16px 0}
+.category_type .link_cate .link{display:block;overflow:hidden;height:50px;padding-top:15px;border:1px solid #f7f7f6;border-radius:3px;background-color:#f7f7f7;text-align:center}
+.category_type .link_cate .ico{padding:0 15px;background:url(https://res.kurly.com/mobile/service/main/1903/ico_more_link.png) no-repeat 100% -1px;background-size:18px 18px;font-size:14px;line-height:18px;letter-spacing:1px}
+
+/* ####### */
+/* 3종노출 */
+/* ####### */
+/* 3종노출이지만 레시피와 이벤트를 같이 사용 - 섹션클래스로 컨트롤해야함 */
+.main_type3{padding-bottom:32px}
+.main_type3 .list_goods{padding:0 16px}
+/* 추천이벤트 */
+.main_event .list_goods:after{content:"";display:block;font-size:0;line-height:0;clear:both}
+.main_event .list_goods li{float:left;width:100%;padding-top:16px;font-size:0}
+.main_event .list_goods li:first-child{padding-top:0}
+.main_event .list_goods .thumb_goods{float:left;width:27%}
+.main_event .list_goods .info_goods{position:relative;float:left;width:72.7%}
+.main_event .list_goods .inner_info{position:absolute;left:0;top:52%;width:100%;padding-left:22px;transform:translate(0%, -50%);-webkit-transform:translate(0%, -50%)}
+.main_event .list_goods .name .txt{font-weight:600;font-size:16px;line-height:22px}
+.main_event .list_goods .desc{display:block;padding-top:4px}
+.main_event .list_goods .desc .txt{font-size:14px;color:#999;line-height:20px}
+/* 레시피 */
+.main_recipe .list_goods li{float:left;width:69.5%}
+.main_recipe .list_goods .more .txt{top:42%;width:98%}
+.main_recipe .list_goods .info_goods{height:46px}
+.main_recipe .list_goods .name{display:block;padding:10px 8px 0 0}
+.main_recipe .list_goods .txt{display:block;overflow:hidden;max-height:38px;font-size:14px;line-height:19px;
+  text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word
+}
+
+/* ######## */
+/* 스페셜딜 */
+/* ######## */
+.main_special{padding-bottom:8px}
+.main_special .tit_goods{padding-top:0}
+.main_special .list_goods{padding:0 16px}
+.main_special .list_goods li{float:none;width:100%;padding-bottom:24px}
+.main_special .list_goods .thumb_goods{position:relative}
+.main_special .list_goods .ico{position:absolute;left:0;top:0;width:14%}
+.main_special .list_goods .bg{position:absolute;left:0;bottom:0;width:100%;height:34px;opacity:0.6}
+.main_special .list_goods .count{position:absolute;left:0;bottom:3px;width:100%;text-align:center}
+.main_special .list_goods .count .num{font-weight:900;font-size:20px;color:#fff;line-height:24px}
+.main_special .list_goods .count .txt{font-weight:normal;font-size:12px;color:#fff;line-height:24px;vertical-align:4px}
+.main_special .list_goods .name{display:block;overflow:hidden;width:100%;padding:8px 0 4px 2px;white-space:nowrap;text-overflow:ellipsis}
+.main_special .list_goods .name .txt{font-size:16px;line-height:22px}
+.main_special .list_goods .price{font-size:16px;line-height:22px}
+.main_special .list_goods .dc{padding-right:3px;font-weight:bold;color:#fa622f}
+.main_special .list_goods .in_price{display:inline}
+.main_special .list_goods .selling{font-weight:bold}
+.main_special .list_goods .cost{padding-left:3px;font-weight:400;font-size:14px;color:#999;text-decoration:line-through}
+/* sold_out */
+.main_special .list_goods .sold_out .bg{height:100%;background-color:#000;opacity:0.5}
+.main_special .list_goods .sold_out .info{position:absolute;left:0;top:50%;width:100%;margin-top:3px;transform:translate(0, -50%);text-align:center}
+.main_special .list_goods .sold_out .tit{display:block;font-weight:600;font-size:20px;color:#fff;line-height:24px}
+.main_special .list_goods .sold_out .desc{display:block;padding:5px 10px 0;font-size:12px;color:#fff;line-height:16px;word-break:break-all}
+
+/* #### */
+/* 배너 */
+/* #### */
+.bnr_main .link{display:block;overflow:hidden;position:relative;width:100%;height:100%;background-color:#eee;background-size:cover;background-position:50% 50%}
+.bnr_main .inner_link{position:absolute;left:0;top:50%;width:100%;padding:0 15px;transform:translate(0%, -50%)}
+.bnr_main .tit{display:block;overflow:hidden;width:100%;font-weight:600;font-size:18px;line-height:26px;white-space:nowrap;text-overflow:ellipsis;text-align:center}
+.bnr_main .txt{display:block;overflow:hidden;width:100%;font-size:14px;line-height:20px;white-space:nowrap;text-overflow:ellipsis;text-align:center}
+
+/*.page_main{opacity:1 !important;}*/
+
+/* END SLIDE STYLE */
+

@@ -1,0 +1,498 @@
+/* ----------- iPhone 4 and 4S ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    
+}
+
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+     :root {
+        --max-width-default: 100%;
+    }
+    /* HEADER TOP  */
+    #userMenu,
+    #userMenu ul.list_menu,
+    #userMenu .loc {
+        display: none;
+        position: absolute;
+    }
+    #headerLogo .logo img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    #gnb .gnb_main,
+    #gnb .gnb_main {
+        display: none;
+    }
+    #headerLogo .logo {
+        position: relative;
+        width: 26%;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    #headerLogo {
+        max-width: 100%;
+        width: 100%;
+        height: 22em;
+        margin: auto;
+        top: 0;
+        position: fixed;
+        z-index: 8;
+        /* position: absolute; */
+        /* margin-left: 2em; */
+        background: white;
+    }
+    .cart_count .img-cart__mobile {
+        text-align: center;
+        padding: 1.5em;
+        position: absolute;
+        top: -14em;
+        right: -30em;
+        z-index: 99;
+    }
+    #container {
+        width: 100%;
+    }
+    #userMenu .bnr_delivery {
+        display: none;
+    }
+    .inner_gnbkurly .mobile-menu__screen {
+        display: none;
+        position: absolute;
+    }
+    #gnb .gnb_kurly {
+        padding: 0;
+        z-index: 9;
+    }
+    #gnb .gnb_search {
+        right: 0;
+    }
+    #gnb .gnb_search .inp_search {
+        width: 100%;
+        height: 2.5em;
+        max-width: 100%;
+        font-size: 2.4em;
+        padding: 0;
+        z-index: 99;
+    }
+    #gnb .gnb_search .btn_search {
+        width: 6em;
+        height: 6em;
+        top: 0;
+    }
+    #gnb .gnb_search {
+        width: 165%;
+        height: 6em;
+        z-index: 99;
+    }
+    #gnb .cart_count {
+        position: relative;
+        top: 1em;
+        right: 0;
+    }
+    #gnb .gnb_search .btn_filter {
+        width: 5em;
+        height: 5em;
+    }
+    #gnb .inner_gnbkurly {
+        height: 0;
+    }
+    #gnb .inner_gnbkurly,
+    #gnb .gnb_main,
+    #gnb,
+    #gnb .gnb_main {
+        top: 0em;
+    }
+    #gnb .gnb_search .bg-filter {
+        width: 5.5em;
+    }
+    .inner_gnbkurly .mobile-menu__screen {
+        position: absolute;
+        top: 14em;
+    }
+    .menu-list {
+        display: none;
+    }
+    #gnb .cart_count .num {
+        min-width: 40px;
+        height: 40px;
+        line-height: 32px;
+        font-size: 22px;
+        left: 4em;
+        top: 0.5em;
+    }
+    .menu__bar-mobile {
+        display: block;
+        position: absolute;
+        top: 3.5em;
+        padding: 2em;
+        margin-top: -2em;
+        z-index: 9999;
+        /* background: wheat; */
+    }
+    .menu__bar-mobile svg {
+        font-size: 4em;
+    }
+    #gnb .cart_count img {
+        max-width: 100%;
+        width: 6.5em;
+        height: auto;
+        z-index: 99;
+    }
+    .wishlist-link {
+        position: absolute;
+        right: -27em;
+        top: 0.6em;
+    }
+    .wishlist-link svg.wishlist-icon {
+        font-size: 4.5em;
+        margin-right: -0.2em;
+    }
+    .add-to-wishlist-margin {
+        margin-right: 0 !important;
+    }
+    .add-to-wishlist-margin a {
+        z-index: 99;
+    }
+    /* END HEADER TOP  */
+    /* FOOTER  */
+    .footer_link,
+    .inner_footer {
+        display: none;
+    }
+    .mobile_footer {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        border: 0;
+        position: fixed;
+        bottom: 0;
+        z-index: 99999;
+    }
+    .mobile_footer ul li {
+        width: 20%;
+        text-align: center;
+        padding: 2em;
+        padding-top: 3em;
+    }
+    .mobile_footer ul {
+        background-color: rgb(236, 242, 240);
+        margin: 0;
+    }
+    .mobile_footer ul li svg {
+        font-size: 3em;
+    }
+    .mobile_footer ul li.home-page {
+        border-radius: 50%;
+        width: 14%;
+        padding: 3em 0;
+        background-color: lightyellow;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 1.5em;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    }
+    /* END FOOTER  */
+    .overlay {
+        height: 100% !important;
+        background-color: rgba(0, 0, 0, 0.275) !important;
+        z-index: 8 !important;
+    }
+    /* NAV BAR  */
+    .menu3,
+    .menu1 .txt {
+        display: none;
+    }
+    .main-nav {
+        display: none;
+        position: absolute;
+        max-width: 100%;
+        width: 75%;
+        height: 116em;
+        top: 0;
+        z-index: 999999;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        border-bottom: 2px solid seashell;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+     ::-webkit-scrollbar {
+        width: 1.2em;
+    }
+     ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #6d6d6d;
+    }
+     ::-webkit-scrollbar-track {
+        background-color: #ebebeb;
+        border-radius: 10px;
+    }
+    .main-nav .profile-content {
+        max-width: 100%;
+        width: 100%;
+        padding: 3em;
+        border-bottom: 1px solid darkgrey;
+        background-color: rgb(236, 242, 240);
+    }
+    .main-nav .profile-content img {
+        max-width: 100%;
+        width: 25%;
+    }
+    .main-nav .desc-list {
+        font-size: 3em;
+        font-weight: 600;
+        background-color: white;
+    }
+    .main-nav .desc-list ul li {
+        padding: 1.3em;
+        border: 1px solid lightgray;
+    }
+    .main-nav .desc-list ul.setting-list li:last-child {
+        border: none;
+    }
+    .main-nav .desc-list svg {
+        font-size: 1em;
+    }
+    .main-nav .desc-list .txt {
+        font-size: 0.9em;
+        font-weight: 600;
+        margin-left: 1.5em;
+        padding: 0.5em;
+        line-height: 0;
+    }
+    .main-nav .desc-list .txt a {
+        text-decoration: none;
+        list-style: none;
+        color: #000;
+    }
+    .main-nav .desc-list label {
+        padding: 0.5em;
+        margin-left: 1em;
+        color: slategray;
+        font-size: 0.8em;
+    }
+    .title-profile .user-name {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: limegreen;
+    }
+    .title-profile .email {
+        font-size: 2.2em;
+        color: lightslategray;
+    }
+    .back-control {
+        width: 7em;
+        position: absolute;
+        padding-left: 2em;
+        top: 0;
+        right: 0;
+    }
+    .back-control svg {
+        font-size: 5em;
+    }
+    /* END NAV BAR  */
+    #main {
+        margin-top: 23em;
+    }
+    /* FILTER  LIST  */
+    .sidenav {
+        display: none;
+        width: 50em !important;
+        top: 0;
+    }
+    .sidenav .container {
+        width: 80%;
+    }
+    .sidenav .closebtn {
+        top: -0.4em;
+        font-size: 8em;
+    }
+    .txt-color-white {
+        margin-top: 2em;
+        font-size: 2.5em;
+    }
+    .txt-according {
+        font-size: 2em;
+    }
+    .btn-filter-submit {
+        width: 66% !important;
+        font-size: 2.5em;
+        padding: 0.5em;
+        margin-left: 3em !important;
+        background-color: revert;
+        color: #000;
+        box-shadow: 0 0 10px 5px crimson;
+        text-decoration: none;
+        border-radius: 5em;
+    }
+    #collapseOne,
+    #collapseTwo,
+    #collapseThree {
+        margin-top: -3em;
+    }
+    .sidenav input {
+        font-size: 2.5em;
+        width: 1.2em;
+        height: 1.2em;
+    }
+    .sidenav .card-header-filter button {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        margin-top: 1.5em;
+        border-radius: 10em;
+        padding: 0.5em;
+        padding-bottom: 1.8em;
+        background-color: #360940;
+    }
+    .sidenav .card-header-filter h6 {
+        font-size: 1em;
+        color: #fff;
+    }
+    .sidenav .card-header-filter h5 {
+        font-size: 1em;
+    }
+    .sidenav .btn-link-filter {
+        margin-left: -8em;
+        font-size: 2.2em;
+        color: #fff;
+    }
+    /* END FILTER LIST  */
+    /* HOMEPAGE  */
+    /* SLIDE EDITOR  */
+    .slide-btn-txt {
+        font-size: 2em;
+        padding: 13px 120px;
+        font-weight: 500;
+    }
+    /* END SLIDE EDITOR  */
+    /* CATEGORY  */
+    .main_max_width h4 {
+        font-size: 2.5em;
+        width: 100%;
+        text-align: left !important;
+        padding: 1em !important;
+    }
+    .category_menu .category .list_category {
+        max-width: 100%;
+        width: 100% !important;
+        background: #BC78EC;
+        text-align: left;
+        padding: 0 !important;
+    }
+    .category_menu .category {
+        max-width: 100%;
+        width: 95%;
+        margin: auto;
+    }
+    .category_menu .category .list_category .menu {
+        font-size: 30px !important;
+        /* padding: 0.5em; */
+        padding: 1em !important;
+        height: initial !important;
+        line-height: 0 !important;
+    }
+    .category_menu .category .list_category li {
+        padding: 20px 10px !important;
+    }
+    .mobile-screen {
+        margin-top: 0 !important;
+    }
+    /* #owl-carousel-filter .owl-stage-outer .owl-stage .owl-item { */
+    #owl-carousel-filter {
+        height: 47% !important;
+    }
+    .main_max_width .item .name,
+    .main_max_width .item .price {
+        font-size: 1.5em;
+    }
+    #carouselExampleIndicators {
+        z-index: 0;
+    }
+    /* END CATEGORY  */
+    /* END HOMEPAGE  */
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+
+/* ----------- iPhone X ----------- */
+
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+
+/* Portrait */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}

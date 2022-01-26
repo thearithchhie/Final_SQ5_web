@@ -1,0 +1,289 @@
+#qnb {
+    position: fixed !important;
+    width: 80px;
+    z-index: 9;
+    right: 20px !important;
+    top: 30% !important;
+    float: right !important;
+    font: normal 12px/16px "Noto Sans";
+    color: #333;
+    letter-spacing: -0.3px;
+    transition: top 0.2s
+}
+
+.goods-goods_view #qnb {
+    top: 20px
+}
+
+
+/* 배너 */
+
+#qnb .bnr_qnb {
+    padding-bottom: 7px
+}
+
+#qnb .bnr_qnb .thumb {
+    width: 80px;
+    height: 120px;
+    vertical-align: top
+}
+
+
+/* 메뉴 */
+
+#qnb .side_menu {
+    width: 80px;
+    border: 1px solid #ddd;
+    border-top: 0 none;
+    background-color: #fff
+}
+
+#qnb .link_menu {
+    display: block;
+    height: 29px;
+    padding-top: 5px;
+    border-top: 1px solid #ddd;
+    text-align: center
+}
+
+#qnb .link_menu:hover,
+#qnb .link_menu.on {
+    color: #5f0080
+}
+
+
+/* 최근본상품 */
+
+#qnb .side_recent {
+    position: relative;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    background-color: #fff
+}
+
+#qnb .side_recent .tit {
+    display: block;
+    padding: 22px 0 6px;
+    text-align: center
+}
+
+#qnb .side_recent .list_goods {
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+    margin: 0 auto
+}
+
+#qnb .side_recent .list {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+#qnb .side_recent .link_goods {
+    display: block;
+    overflow: hidden;
+    width: 60px;
+    height: 80px;
+    padding: 1px 0 2px
+}
+
+#qnb .side_recent .btn {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 17px;
+    border: 0 none;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px
+}
+
+#qnb .side_recent .btn_up {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover.png) no-repeat 50% 50%
+}
+
+#qnb .side_recent .btn_up.off {
+    background: url(https://res.kurly.com/pc/service/main/2002/ico_quick_up.png) no-repeat 50% 50%
+}
+
+#qnb .side_recent .btn_down {
+    background: url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover.png) no-repeat 50% 0
+}
+
+#qnb .side_recent .btn_down.off {
+    background: url(https://res.kurly.com/pc/service/main/2002/ico_quick_down.png) no-repeat 50% 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx) {
+    #qnb .side_recent .btn_up {
+        background-image: url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_hover_x2.png);
+        background-size: 12px 18px
+    }
+    #qnb .side_recent .btn_down {
+        background-image: url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_hover_x2.png);
+        background-size: 12px 18px
+    }
+    #qnb .side_recent .btn_up.off {
+        background-image: url(https://res.kurly.com/pc/service/main/2002/ico_quick_up_x2.png);
+        background-size: 12px 18px
+    }
+    #qnb .side_recent .btn_down.off {
+        background-image: url(https://res.kurly.com/pc/service/main/2002/ico_quick_down_x2.png);
+        background-size: 12px 18px
+    }
+}
+
+@media all and (max-width: 1250px) {
+    #qnb {
+        display: none
+    }
+}
+
+#gnb .gnb_main .gnb a:hover,
+#gnb .gnb_main .gnb a.on {
+    text-decoration: none;
+}
+
+#userMenu .list_menu {
+    font-size: 12px;
+}
+
+a.phpdebugbar-restore-btn {
+    display: none !important;
+}
+
+.contain-account {
+    line-height: 3;
+    /* width: 10em; */
+}
+
+.nav-link {
+    padding-left: 1em;
+}
+
+.menu-logout__after:after {
+    display: none;
+}
+
+.dropdown-menu-right {
+    padding-left: 1em;
+}
+
+
+/* li.menu-logout__after {
+	position: absolute !important;
+	right: 26em;
+} */
+
+#userMenu .list_menu .lang:after {
+    display: none !important;
+}
+
+
+/* @media screen and (max-width: 1200px) {
+	#userMenu {
+			width: 47% !important;
+	}
+} */
+
+.lang__select {
+    text-align: center;
+    width: 5em;
+    line-height: 2.9;
+    float: left;
+}
+
+#userMenu .menu:hover,
+#userMenu .link_menu:hover {
+    color: #5f0080;
+}
+
+#userMenu .sub {
+    width: auto;
+    text-align: left;
+}
+
+#userMenu .menu.menu_logout {
+    width: 11em;
+}
+
+#userMenu .menu_logout:after {
+    content: "";
+    position: absolute;
+    float: right;
+    top: 0.3em;
+    margin-top: 12px;
+    width: 8px;
+    height: 13px;
+    z-index: 9999;
+    background: url(https://res.kurly.com/pc/ico/1908/ico_down_8x5.png) no-repeat 0 0;
+}
+
+#userMenu li:last-child:after {
+    visibility: hidden;
+}
+
+.dropdown-item {
+    padding: 0;
+}
+
+#userMenu {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 56%;
+    margin-top: 0.5em;
+}
+
+#userMenu .list_menu {
+    float: right;
+    text-align: center;
+}
+
+.bnr_delivery {
+    float: left;
+    margin-top: 1em;
+}
+
+.logout-dropdown {
+    position: absolute;
+    margin-left: 0.3rem;
+}
+
+.dropdown-menu a.dropdown-item {
+    width: 9em;
+    height: 2em;
+    text-align: left;
+    display: inline-block;
+}
+
+#userMenu .list_menu a {
+    color: #333;
+    font-size: 12px;
+}
+
+.dt_price {
+    font-size: 18px;
+    -webkit-text-decoration-line: line-through;
+    /* Safari */
+    text-decoration-line: line-through;
+    opacity: 0.7;
+}
+
+/*Order Detail*/
+.order-detail-hover a:hover {
+    text-decoration: none;
+    color: #5F0080;
+}
+.order-detail-id{
+    color: #6c757d;
+}
+.order-detail-delivery-fee {
+    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; = default design*/
+    box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), 0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+}

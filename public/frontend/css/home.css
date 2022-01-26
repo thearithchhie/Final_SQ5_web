@@ -1,0 +1,501 @@
+:root {
+    --max-width-default: 1050px;
+    --margin-auto: 0 auto;
+}
+
+.main_max_width {
+    max-width: var(--max-width-default);
+    margin: var(--margin-auto);
+}
+
+.main_max_width h4 {
+    font-weight: 900;
+    color: #333;
+}
+
+
+/* Product */
+
+.product_title {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.product_price,
+.product_dis {
+    font-size: 14px;
+}
+
+.product_dis {
+    text-decoration: line-through;
+}
+
+.product_description {
+    font-size: 12px;
+}
+
+
+/* End Product */
+
+.market_title {
+    font-weight: 700;
+}
+
+.filter-clear {
+    cursor: pointer;
+}
+
+.market_status {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-items: center;
+    top: 1;
+    justify-content: space-between;
+}
+
+.market_status_left {
+    background: rgb(189, 118, 255);
+    padding: 0 14px 4px 1px;
+    position: absolute;
+    top: -321px;
+    font-size: 12px;
+    padding-left: 1em;
+}
+
+.market_status_right {
+    margin-left: 200px;
+    background: #81708e;
+    padding: 0px 6px 5px 3px;
+    position: absolute;
+    top: -321px;
+}
+
+.market_status_title_color {
+    background: #D80A1A;
+}
+
+
+/* End Market */
+
+.link_view_product a {
+    display: block;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    cursor: pointer;
+    border: 1px solid #e3e3e3;
+    height: 50px;
+    border-radius: 3px;
+    width: 50%;
+    margin: auto
+}
+
+
+/* End link All Product */
+
+.product_top_rate_spical_price {
+    border-radius: 0px 28px 0px 0px;
+}
+
+.banner_footer_title {
+    margin-top: 4em;
+}
+
+.owl-nav,
+button {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    width: 61px;
+    height: 61px;
+    border: none;
+    outline: none;
+}
+
+.owl-nav,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 0px;
+    right: 1000px;
+    color: red;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+    color: red !important;
+}
+
+.owl-carousel.btn-custom button {
+    margin-top: 2em;
+}
+
+.item img {
+    width: 249px;
+}
+
+.owl-carousel .owl-nav {
+    display: block !important;
+}
+
+.main_max_width .item .name {
+    color: #000;
+    font-weight: 700;
+}
+
+.main_max_width a {
+    text-decoration: none;
+    /* padding     : 8px; */
+}
+
+.main_max_width .item .price {
+    display: block;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.main_max_width .item .dc {
+    padding-right: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fa622f;
+    line-height: 20px;
+}
+
+.markets-view {
+    margin: auto;
+    background-image: url('https://markets-customer.smartersvision.com/images/bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.market-list {
+    height: 20em !important;
+}
+
+.jumbotron {
+    background-color: unset !important;
+}
+
+.btn__view_all {
+    background-image: linear-gradient(to bottom, #b10dc9 0%, #870a99 100%) !important;
+    color: #fff !important;
+}
+
+.btn__view_all:hover {
+    background-image: linear-gradient(to bottom, #c60fe1 0%, #9c0bb1 100%) !important;
+}
+
+.market-contain main_max_width {
+    width: 100%;
+    margin-top: -6em;
+    /* max-width: 55%; */
+    margin: auto;
+}
+
+
+/* CATEGORY  */
+
+.category_menu .category .list_category {
+    width: 1050px;
+    max-width: 1050px;
+    padding: 0 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+
+.category_menu .category .list_category .menu:hover {
+    border: 1px solid #f7f3f7;
+    background-color: #f7f3f8;
+    color: #5f0080;
+}
+
+.category_menu .category .list_category .menu {
+    display: inline-block;
+    height: 40px;
+    padding: 9px 20px 0 19px;
+    border: 1px solid #f7f7f6;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+}
+
+.category_menu .category .list_category li {
+    display: inline-block;
+    padding: 0 5px 20px;
+}
+
+.market-header img {
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.market-header img:hover {
+    opacity: unset;
+}
+
+.market-header span.txt-close {
+    background-color: #dc3545;
+}
+
+.market-header span.txt-open {
+    background-color: #28a745;
+}
+
+.market-header span.txt__title-store {
+    background-color: rgba(0, 0, 0, 0.528);
+}
+
+.market-header span.txt-close,
+.market-header span.txt-open {
+    right: 1em;
+}
+
+.market-header span.txt-open {
+    left: 0;
+}
+
+.market-header span.txt-pickup {
+    background-color: orange;
+    left: 5em;
+}
+
+.market-header span.txt-pickup,
+.market-header span.txt-open {
+    position: absolute;
+    bottom: 10.5em;
+    padding: 4px;
+    font-size: .675rem;
+    line-height: 1.25rem;
+    margin: 0.5em;
+    border-radius: 4px;
+    width: 4em;
+    text-align: center;
+}
+
+.market-header span.txt-close,
+.market-header span.txt__title-store {
+    position: absolute;
+    top: 0;
+    font-size: .675rem;
+    line-height: 1.25rem;
+    margin: 0.5em;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.markets_title {
+    font-size: 15px;
+    /* margin-top : -2em; */
+    margin-top: 1em;
+    width: 90%;
+    white-space: pre-wrap;
+    z-index: 10;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.market-home__detail {
+    width: 100%;
+    font-size: 12px;
+    /* margin-top: 2em; */
+}
+
+.market-home__detail .m-detail__left {
+    width: 60%;
+    text-align: left;
+    /* background-color: red; */
+}
+
+.market-home__detail .m-detail__right {
+    width: 30%;
+    text-align: right;
+    /* background-color: gray; */
+}
+
+.market-home__detail .address,
+.market-home__detail .m-detail__left,
+.market-home__detail .m-detail__right {
+    float: left;
+}
+
+
+/* END CATEGORY  */
+
+
+/* Recent Review */
+
+.authentication {
+    display: flex;
+    margin-top: 11px;
+}
+
+.mark .logo {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px
+}
+
+.mark .txt {
+    font-size: 10px;
+}
+
+.review_people {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    /* padding    : 24px 0px 25px 7px; */
+}
+
+.review_people .review_people_title {
+    margin-left: 100px;
+}
+
+.review_people_icon {
+    font-size: 21px;
+}
+
+.review_people .review_people_title h3 {
+    font-size: 21px;
+    font-weight: 800;
+    margin-left: -83px;
+}
+
+.footer_link_start {
+    background-color: #2ad369;
+    padding: 2px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.footer_link_start_color {
+    color: #fff;
+}
+
+
+/* End Recent Review */
+
+
+/* Trending */
+
+.trending_header_detail {
+    font-size: 12px;
+}
+
+.trending_header {
+    margin-top: 3rem;
+}
+
+
+/* End Trending */
+
+.market-img {
+    width: auto;
+    height: 220px;
+}
+
+.product-img {
+    width: auto;
+    height: 375px;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 370px;
+    padding: 30px 220px;
+}
+
+.top_start {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.top_center {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top_end {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.center_start {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.center_end {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bottom_start {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.bottom_center {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bottom_end {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.slide-ttl {
+    font-size: 1.6em;
+    margin-bottom: 0.3em;
+}
+
+.slide-btn a {
+    text-decoration: none;
+}
+
+.slide-btn-txt {
+    border-radius: 30px;
+    padding: 13px 60px;
+    display: inline-flex;
+    color: #fff;
+    font-weight: 900;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+
+/*  */
+
+.btn-filter-submit {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: 34%;
+}

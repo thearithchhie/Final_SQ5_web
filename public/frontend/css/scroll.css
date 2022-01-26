@@ -1,0 +1,81 @@
+/* Scroll Up  */
+
+#scroll_up {
+    display: inline-block;
+    overflow: hidden;
+    position: fixed;
+    z-index: 300;
+    right: 31px;
+    bottom: 0;
+    width: 58px;
+    height: 58px;
+    border: 0;
+    background: url(https://res.kurly.com/pc/service/common/1903/btn_pagetop_v2.png) no-repeat 50% 50%;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    text-indent: -9999px;
+}
+
+#scroll_up::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+/* #scroll_up:hover {
+    cursor: pointer;
+}
+
+#scroll_up.show {
+    opacity: 1;
+    visibility: visible;
+} */
+
+
+/* End Scroll Up  */
+
+
+/* Scroll Up Mobile */
+
+#pageTop {
+    overflow: hidden;
+    position: fixed;
+    z-index: 39;
+    right: 15px;
+    bottom: 60px !important;
+    width: 46px;
+    height: 46px;
+    border: 0;
+    background: url(https://res.kurly.com/mobile/service/common/1903/btn_pagetop_v3.png) no-repeat 50% 50%;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    text-indent: -9999px;
+}
+
+#pageTop::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#pageTop:hover {
+    cursor: pointer;
+}
+
+#pageTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* End Scroll Up Mobile */

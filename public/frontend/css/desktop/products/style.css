@@ -1,0 +1,186 @@
+    #cartPut .cart_option .group_btn {
+        width: 71%;
+        float: right;
+    }
+    
+    .list-reviews li {
+        display: flex;
+        flex: 1;
+        vertical-align: top;
+    }
+    
+    .list-reviews li a {
+        flex: 1;
+        position: relative;
+        top: 1 px;
+        height: 60 px;
+        line-height: 59px;
+        text-align: center;
+        display: block;
+        color: #666;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: -.3px;
+        font-family: noto sans;
+        background-color: #fafafa;
+        border: 1 px solid #eee;
+        border-left: none;
+    }
+    
+    #sectionView .goods_price .dc .won {
+        padding: 0;
+    }
+    
+    #sectionView .goods_name .name {
+        max-width: 75%;
+    }
+    
+    #cartPut .cart_option .total .ico {
+        width: 8em;
+    }
+    
+    .nav-tabs {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:focus,
+    .nav-tabs>li.active>a:hover {
+        color: #555;
+        cursor: default;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-bottom-color: transparent;
+    }
+    
+    .nav-tabs>li.active {
+        border-bottom: none;
+    }
+    /* SIZE  */
+    
+    .boxed label {
+        display: inline-block;
+        width: 4em;
+        text-align: center;
+        padding: 0 7px;
+        border: solid 2px#ccc;
+        transition: all 0.3s;
+    }
+    
+    .boxed input[type="radio"] {
+        display: none;
+    }
+    
+    .boxed input[type="radio"]:checked+label {
+        border: solid 2px green;
+    }
+    
+    #checkall1,
+    #checkall2 {
+        font-size: .8rem;
+        position: absolute;
+        margin: 6px;
+        border-radius: 2px;
+        transition: .2s ease-out;
+        white-space: normal!important;
+        cursor: pointer;
+        border: 2px solid #512da8;
+        color: #512da8!important;
+        background-color: transparent;
+        right: 0;
+    }
+    
+    .button-group-pills {
+        margin-left: -10em;
+    }
+    
+    .button-group-pills .btn {
+        font-size: .8rem;
+        margin: 6px;
+        border-radius: 2px;
+        border: 0;
+        transition: .2s ease-out;
+        white-space: normal!important;
+        padding: 0.4em;
+        width: 4em;
+    }
+    
+    .button-group-pills .btn.active {
+        border: 2px solid #2E2E2E;
+        background-color: transparent;
+        color: #fff;
+        box-shadow: none;
+    }
+    
+    .button-group-pills .btn:hover {
+        border: 2px solid #2E2E2E;
+        background-color: transparent;
+        color: #fff;
+    }
+    /* END SIZE  */
+    
+    .txt_point .ico {
+        display: inline-block;
+        width: 9em;
+        margin-right: 2px;
+        border-radius: 10px;
+        background-color: #ffbf00;
+        font-weight: 700;
+        font-size: 11px;
+        color: #fff;
+        line-height: 20px;
+        text-align: center;
+        vertical-align: 1px;
+        padding: 0.3em;
+    }
+    
+    .txt_point .capacity,
+    .txt_point .items {
+        margin: 0 0.2em;
+        padding: 0.4em;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.398);
+    }
+    
+    #cartPut .cart_type2 .list_nopackage .tit_item.purchase_qty {
+        width: 7em;
+    }
+    
+    #sectionView .goods_name.mk-name {
+        padding: 0;
+    }
+    
+    #sectionView .goods_info {
+        margin-top: 0;
+    }
+    
+    #cartPut .cart_option .group_btn .btn_type1 {
+        width: 100%;
+    }
+    
+    #cartPut .cart_option .group_btn .btn_type1:hover {
+        background-image: linear-gradient(to bottom, #c60fe1 0%, #9c0bb1 100%);
+        border: none;
+    }
+    
+    .favorite {
+        margin: 0 1em;
+        background-color: #fff;
+        border: 1px solid gray;
+        border-radius: 6%;
+        font-size: 1em;
+        width: 7em;
+        padding: 0.9em;
+    }
+    
+    .favorite:hover {
+        background-color: hotpink;
+        color: #fff;
+    }
+    
+    .reviews_pro {
+        font-size: 1.3em;
+        font-weight: 700;
+    }
